@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        
+        tr:hover{
+            background-color: #DCDCDC;
+        }
+        table.color td a.win {
+            background-color: #51b654;
+            padding: 8px 12px;
+            border-radius: 50%;
+            color: white ; 
+        }
+        table.color td a.lose {
+            background-color: #e43131;
+            padding: 8px 12px;
+            border-radius: 50%;
+            color: white ;   
+        }
+        h1.main{
+            background-color: #3f1052;
+            padding: 100px 30px;
+            color: white ; 
+        }
+        table.color td.uefac{ 
+             border-left: 5px solid rgb(11, 175, 240);
+             border-bottom: 2px solid #ddd;
+        }
+        table.color td.uefa{ 
+             border-left: 5px solid rgb(240, 133, 11);
+             border-bottom: 2px solid #ddd;
+        }
+        table.color td.re{ 
+             border-left: 5px solid rgb(240, 11, 11);
+             border-bottom: 2px solid #ddd;
+        }
+        table.color td.boxc{
+            border: 5px solid rgb(11, 175, 240);   
+            background-color: rgb(11, 175, 240);   
+        }
+        table.color td.boxu{
+            border: 5px solid rgb(240, 133, 11);   
+            background-color: rgb(240, 133, 11);   
+        }
+        table.color td.boxr{
+            border: 5px solid rgb(240, 11, 11);   
+            background-color: rgb(240, 11, 11);   
+        }
+        th,td {
+                padding: 10px;
+                border-bottom: 2px solid #ddd; // เส้นขอบด้านล่าง
+        }
+        </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League</title>
+</head>
+<body>
+    <h1 class="main"> Premier League </h1>
+    <table class = "color" style="width:100%">
+        <caption>Season 2021-22</caption>
+        <tr align = 'center'>
+          <th></th>
+          <th>Club</th>
+          <th></th>
+          <th>MP</th>
+          <th>W</th>
+          <th>D</th>
+          <th>L</th>
+          <th>GF</th>
+          <th>GA</th>
+          <th>GD</th>
+          <th>Pts</th>
+          <th>Last 5</th>
+        </tr>
+        <tr align = 'center' >
+          <td class="uefac"> 1 </td>
+          <td><img src = "https://upload.wikimedia.org/wikipedia/th/e/eb/Manchester_City_FC_badge.svg" width="60" height="60" align = 'center' alt='Man City'></td>
+          <td> Man City </td>
+          <td>23</td>
+          <td>18</td>
+          <td>3</td>
+          <td>2</td>
+          <td>55</td>
+          <td>14</td>
+          <td>41</td>
+          <td>57</td>
+          <td>
+            <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'> 
+              <a class="win">&#10004</a>
+              <a class="win">&#10004</a> 
+              <a class="win">&#10004</a> 
+              <a class="win">&#10004</a> 
+          </td>
+        </tr>
+        <tr align = 'center'>
+            <td class="uefac"> 2 </td>
+            <td><img src = "http://assets.stickpng.com/images/580b57fcd9996e24bc43c4e5.png" width="60" height="60" align = 'center' alt='Liverpool'></td>
+            <td>Liverpool</td>
+            <td>22</td>
+            <td>14</td>
+            <td>6</td>
+            <td>2</td>
+            <td>58</td>
+            <td>19</td>
+            <td>39</td>
+            <td>48</td>
+            <td>
+              <a class="win">&#10004</a> 
+              <a class="win">&#10004</a>  
+              <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'> 
+                <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+            </td>
+          </tr>
+          <tr align = 'center'>
+            <td class="uefac"> 3 </td>
+            <td><img src = "http://2.bp.blogspot.com/-UNarZA-Fukk/T0qXXTYp3OI/AAAAAAABN5A/RvZ6NYlF_8A/s1600/Chelsea_Logo15.png" width="60" height="60" align = 'center' alt='Chelsea'></td>
+            <td> Chelsea </td>
+            <td>24</td>
+            <td>13</td>
+            <td>8</td>
+            <td>3</td>
+            <td>48</td>
+            <td>18</td>
+            <td>30</td>
+            <td>47</td>
+            <td>
+              <a class="win">&#10004</a> 
+              <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                <a class="lose">X</a> 
+                <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'> 
+                <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+            </td>
+          </tr>
+          <tr align = 'center'>
+              <td class="uefac"> 4 </td>
+              <td><img src = "https://upload.wikimedia.org/wikipedia/th/thumb/7/7a/Manchester_United_FC_crest.svg/640px-Manchester_United_FC_crest.svg.png" width="60" height="60" align = 'center' alt='Man United'></td>
+              <td>Man United</td>
+              <td>22</td>
+              <td>11</td>
+              <td>5</td>
+              <td>6</td>
+              <td>36</td>
+              <td>30</td>
+              <td>6</td>
+              <td>38</td>
+              <td>
+                <a class="win">&#10004</a> 
+                <a class="win">&#10004</a>
+                <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                  <a class="lose">X</a> 
+                <a class="win">&#10004</a>
+                </td>
+            </tr>
+            <tr align = 'center'>
+                <td class="uefa"> 5 </td>
+                <td><img src = "https://upload.wikimedia.org/wikipedia/th/thumb/c/c2/West_Ham_United_FC_logo.svg/1200px-West_Ham_United_FC_logo.svg.png" width="60" height="60" align = 'center' alt='West Ham'></td>
+                <td> West Ham </td>
+                <td>23</td>
+                <td>11</td>
+                <td>4</td>
+                <td>8</td>
+                <td>41</td>
+                <td>31</td>
+                <td>10</td>
+                <td>37</td>
+                <td>
+                    <a class="lose">X</a> 
+                    <a class="lose">X</a> 
+                    <a class="win">&#10004</a> 
+                    <a class="win">&#10004</a>
+                    <a class="win">&#10004</a>
+                </td>
+              </tr>
+              <tr align = 'center'>
+                  <td> 6 </td>
+                  <td><img src = "https://upload.wikimedia.org/wikipedia/th/8/82/Arsenal_FC.png" width="60" height="60" align = 'center' alt='Arsenal'></td>
+                  <td>Arsenal</td>
+                  <td>21</td>
+                  <td>11</td>
+                  <td>3</td>
+                  <td>7</td>
+                  <td>33</td>
+                  <td>25</td>
+                  <td>8</td>
+                  <td>36</td>
+                  <td>
+                    <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                    <a class="lose">X</a> 
+                    <a class="win">&#10004</a> 
+                    <a class="win">&#10004</a>
+                    <a class="win">&#10004</a> 
+                    </td>
+                </tr>
+                <tr align = 'center'>
+                  <td> 7 </td>
+                  <td><img src = "https://upload.wikimedia.org/wikipedia/th/6/6d/Tottenham_Hotspur.png" width="60" height="60" align = 'center' alt='Spurs'></td>
+                  <td> Spurs </td>
+                  <td>20</td>
+                  <td>11</td>
+                  <td>3</td>
+                  <td>6</td>
+                  <td>26</td>
+                  <td>24</td>
+                  <td>2</td>
+                  <td>36</td>
+                  <td>
+                      <a class="lose">X</a> 
+                    <a class="win">&#10004</a>
+                    <a class="win">&#10004</a> 
+                    <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                    <a class="win">&#10004</a>
+                    </td>
+                </tr>
+                <tr align = 'center'>
+                    <td> 8 </td>
+                    <td><img src = "data:image/png;base64,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"
+                       width="60" height="60" align = 'center' alt='Wolverhampton'></td>
+                    <td>Wolverhampton</td>
+                    <td>21</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>19</td>
+                    <td>16</td>
+                    <td>3</td>
+                    <td>34</td>
+                    <td>
+                      <a class="win">&#10004</a> 
+                      <a class="win">&#10004</a>
+                      <a class="win">&#10004</a>
+                      <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                      <a class="win">&#10004</a>
+                    </td>
+                  </tr>
+                  <tr align = 'center'>
+                    <td> 9 </td>
+                    <td><img src = "https://upload.wikimedia.org/wikipedia/th/thumb/f/fd/Brighton_%26_Hove_Albion_logo.svg/1200px-Brighton_%26_Hove_Albion_logo.svg.png" width="60" height="60" align = 'center' alt='Brighton'></td>
+                    <td> Brighton </td>
+                    <td>22</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>0</td>
+                    <td>30</td>
+                    <td>
+                      <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                        <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                        <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                        <a class="win">&#10004</a>
+                        <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                    </td>
+                  </tr>
+                  <tr align = 'center'>
+                      <td> 10 </td>
+                      <td><img src = "https://upload.wikimedia.org/wikipedia/th/6/63/Leicester02.png" width="60" height="60" align = 'center' alt='Leicester City'></td>
+                      <td>Leicester City </td>
+                      <td>20</td>
+                      <td>7</td>
+                      <td>5</td>
+                      <td>8</td>
+                      <td>34</td>
+                      <td>37</td>
+                      <td>-3</td>
+                      <td>26</td>
+                      <td>
+                        <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                          <a class="lose">X</a> 
+                          <a class="win">&#10004</a> 
+                          <a class="lose">X</a> 
+                          <a class="win">&#10004</a>
+                      </td>
+                    </tr>
+                    <tr align = 'center'>
+                      <td> 11 </td>
+                      <td><img src = "https://upload.wikimedia.org/wikipedia/th/5/57/Aston_Villa.png" width="60" height="60" align = 'center' alt='Aston Villa'></td>
+                      <td> Aston Villa </td>
+                      <td>21</td>
+                      <td>8</td>
+                      <td>2</td>
+                      <td>11</td>
+                      <td>28</td>
+                      <td>32</td>
+                      <td>-4</td>
+                      <td>26</td>
+                      <td>
+                        <a class="win">&#10004</a> 
+                        <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                          <a class="lose">X</a> 
+                          <a class="lose">X</a> 
+                          <a class="win">&#10004</a>
+                      </td>
+                    </tr>
+                    <tr align = 'center'>
+                        <td> 12 </td>
+                        <td><img src = "https://upload.wikimedia.org/wikipedia/th/thumb/c/c9/FC_Southampton.svg/1200px-FC_Southampton.svg.png" width="60" height="60" align = 'center' alt='Southampton'></td>
+                        <td>Southampton </td>
+                        <td>22</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>26</td>
+                        <td>34</td>
+                        <td>-8</td>
+                        <td>25</td>
+                        <td>
+                          <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                            <a class="lose">X</a> 
+                            <a class="win">&#10004</a>
+                            <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                            <a class="win">&#10004</a> 
+                          </td>
+                      </tr>
+                      <tr align = 'center'>
+                          <td> 13 </td>
+                          <td><img src = "https://upload.wikimedia.org/wikipedia/th/thumb/0/0c/Crystal_Palace_FC_logo.svg/1200px-Crystal_Palace_FC_logo.svg.png" width="60" height="60" align = 'center' alt='Crystal Palace'></td>
+                          <td>Crystal Palace  </td>
+                          <td>22</td>
+                          <td>5</td>
+                          <td>9</td>
+                          <td>8</td>
+                          <td>31</td>
+                          <td>34</td>
+                          <td>-3</td>
+                          <td>24</td>
+                          <td>
+                              <a class="lose">X</a> 
+                              <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                              <a class="lose">X</a> 
+                              <a class="win">&#10004</a>
+                              <a class="lose">X</a> 
+                          </td>
+                        </tr>
+                        <tr align = 'center'>
+                            <td> 14 </td>
+                            <td><img src = "https://img1.thaipng.com/20190124/pat/kisspng-brentford-f-c-football-bristol-city-f-c-clip-art-5c494848c8fa56.1453772215483065048232.jpg" width="60" height="60" align = 'center'  alt='Brentford'></td>
+                            <td>Brentford</td>
+                            <td>23</td>
+                            <td>6</td>
+                            <td>5</td>
+                            <td>12</td>
+                            <td>26</td>
+                            <td>38</td>
+                            <td>-12</td>
+                            <td>23</td>
+                            <td>
+                                <a class="lose">X</a>
+                                <a class="lose">X</a> 
+                                <a class="lose">X</a>
+                                <a class="lose">X</a>
+                                <a class="win">&#10004</a>
+                              </td>
+                          </tr>
+                          <tr align = 'center'>
+                            <td> 15 </td>
+                            <td><img src = "https://upload.wikimedia.org/wikipedia/th/thumb/5/54/Leeds_United_F.C._logo.svg/800px-Leeds_United_F.C._logo.svg.png" width="60" height="60" align = 'center' alt='Leeds United'></td>
+                            <td> Leeds United </td>
+                            <td>21</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>24</td>
+                            <td>40</td>
+                            <td>-16</td>
+                            <td>22</td>
+                            <td>
+                                <a class="lose">X</a> 
+                                <a class="win">&#10004</a>
+                                <a class="win">&#10004</a>
+                                <a class="lose">X</a>
+                                <a class="lose">X</a>
+                              </td>
+                          </tr>
+                          <tr align = 'center'>
+                              <td> 16 </td>
+                              <td><img src = "https://upload.wikimedia.org/wikipedia/th/e/e4/Everton_F.C._2014.png" width="60" height="60" align = 'center' alt='Everton'></td>
+                              <td>Everton</td>
+                              <td>20</td>
+                              <td>5</td>
+                              <td>4</td>
+                              <td>11</td>
+                              <td>24</td>
+                              <td>35</td>
+                              <td>-11</td>
+                              <td>19</td>
+                              <td>
+                                <a class="lose">X</a>
+                                <a class="lose">X</a> 
+                                <a class="lose">X</a> 
+                                <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                                <a class="lose">X</a>
+                              </td>
+                            </tr>
+                            <tr align = 'center'>
+                                <td> 17 </td>
+                                <td><img src = "https://upload.wikimedia.org/wikipedia/th/4/41/Norwich_City.png" width="60" height="60" align = 'center' alt='Norwich City'></td>
+                                <td>Norwich City   </td>
+                                <td>22</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>14</td>
+                                <td>13</td>
+                                <td>45</td>
+                                <td>-32</td>
+                                <td>16</td>
+                                <td>
+                                  <a class="win">&#10004</a>
+                                  <a class="win">&#10004</a>
+                                    <a class="lose">X</a> 
+                                    <a class="lose">X</a>
+                                    <a class="lose">X</a> 
+                                </td>
+                              </tr>
+                              <tr align = 'center'>
+                                  <td class="re"> 18 </td>
+                                  <td><img src = "https://upload.wikimedia.org/wikipedia/th/thumb/f/f6/Newcastle_United_Logo.svg.png/345px-Newcastle_United_Logo.svg.png" width="60" height="60" align = 'center' alt='Newcastle United'></td>
+                                  <td>Newcastle United </td>
+                                  <td>21</td>
+                                  <td>2</td>
+                                  <td>9</td>
+                                  <td>10</td>
+                                  <td>21</td>
+                                  <td>43</td>
+                                  <td>-22</td>
+                                  <td>15</td>
+                                  <td>
+                                    <a class="win">&#10004</a>
+                                    <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                                    <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                                      <a class="lose">X</a>
+                                      <a class="lose">X</a>
+                                      
+                                    </td>
+                                </tr>
+                                <tr align = 'center'>
+                                  <td class="re"> 19 </td>
+                                  <td><img src = "https://upload.wikimedia.org/wikipedia/th/thumb/e/e2/Watford.svg/300px-Watford.svg.png" width="60" height="60" align = 'center' alt='Watford'></td>
+                                  <td> Watford  </td>
+                                  <td>20</td>
+                                  <td>4</td>
+                                  <td>2</td>
+                                  <td>14</td>
+                                  <td>23</td>
+                                  <td>40</td>
+                                  <td>-17</td>
+                                  <td>14</td>
+                                  <td>
+                                      <a class="lose">X</a> 
+                                      <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                                      <a class="lose">X</a> 
+                                      <a class="lose">X</a>
+                                      <a class="lose">X</a>
+                                    </td>
+                                </tr>
+                                <tr align = 'center'>
+                                    <td class="re"> 20 </td>
+                                    <td><img src = "https://upload.wikimedia.org/wikipedia/th/thumb/6/62/Burnley_F.C._Logo.svg/270px-Burnley_F.C._Logo.svg.png" width="60" height="60" align = 'center' alt='Burnley'></td>
+                                    <td>Burnley</td>
+                                    <td>18</td>
+                                    <td>1</td>
+                                    <td>9</td>
+                                    <td>8</td>
+                                    <td>16</td>
+                                    <td>27</td>
+                                    <td>-11</td>
+                                    <td>12</td>
+                                    <td>
+                                      <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                                      <a class="lose">X</a> 
+                                      <a class="lose">X</a> 
+                                      <img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'>
+                                      <a class="lose">X</a>
+                                    </td>
+                                  </tr>
+
+
+            <table class = "color" style="width:50%" cellpadding="10"  bgcolor ="#DCDCDC" align = 'center'>
+                <div>
+                <tr align = 'center'>
+                    <th></th>
+                    <th>Qualifying rounds / Relegation</th>
+                    <th>Last 5</th>
+                  </tr>   
+                  <tr align = 'center'>
+                    <td class="boxc"></td>
+                    <td> UEFA Champions League </td>
+                    <td><a class="win">&#10004</a><a> Win </a></td>
+                  </tr>
+                  <tr align = 'center'>
+                    <td class="boxu"></td>
+                    <td> UEFA Europa League </td>
+                    <td><img src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iRHJhdyI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGZpbGw9IiM5QUEwQTYiIGN4PSI4IiBjeT0iOCIgcj0iOCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUgNyAxMSA3IDExIDkgNSA5Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" width="35" height="35" align = 'center'> <a> Deal </a></td>
+                  </tr>
+                  <tr align = 'center'>
+                    <td class="boxr"></td>
+                    <td> Relegation </td>
+                    <td><a class="lose">X</a> <a> Lose </a></td>
+                  </tr>
+                </div>
+      </table>
+
+</body>
